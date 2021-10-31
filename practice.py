@@ -1,13 +1,16 @@
 # coding: utf-8
 
-word = "python"
-print(word[0])
-print(word[1:5])
-print(word[-1])
-print("**************")
-print(word[0:])
-print(word[0:1])
-print(word[1:])
+list = [] #配列の数は宣言しなくていい
+for i in range(0, 10):
+    list.append(i) #.appendメソッドで一つずつ加えていく
 
-word = "j" + word[1:]
-print(word)
+list.reverse()
+print(list)
+list.sort()
+print(list)
+
+s = "My name is Mike"
+s_split = s.split(" ")
+print(s_split)
+x = " ".join(s_split)
+print(x)
