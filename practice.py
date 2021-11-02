@@ -1,20 +1,22 @@
 # coding: utf-8
+ 
+s = input()
+t = input()[:-1]
 
-d = {"x": 10, "y": 20}
-print(d)
-print(type(d))
+if s == t:
+    print("YES")
+else:
+    print("NO")
 
-print(d.keys()) #key's'
+a, b, c, k= map(int, input().split())
 
-print(d.values()) #value's'
+ans = 0
 
-d2 = {"x": 1000, "j": 500}
-print(d2)
+ans += min(a, k)
+k -= min(a, k)
 
-d.update(d2)
-print(d)
+ans += min(b, k) * 0
+k -= min(b, k)
 
-print(d.get("x"))
-print(d.get("z"))
-d.pop("x")
-print(d)
+ans += min(c, k) * -1
+k -= min(c, k)
