@@ -1,26 +1,12 @@
-x = {"a": 1}
-y = x
-y["a"] = 1000
-print(x)
-print(y)
+s = {1, 2, 3, 4, 5}
+print(s)
+# s[0]はエラー
 
-x = {"a": 1}
-y = x.copy()
-print(x)
-print(y)
+s.add(6)
+print(s)
 
-fruits = {
-    "apple": 100,
-    "banana": 200,
-    "orange": 300,
-}
+s.remove(6)
+print(s)
 
-print(fruits["apple"])#リストは値を探すのに時間がかかる
-
-'''
-l = [
-    ["apple", 100],
-    ["banana", 200],
-    ["orange", 300],
-]
-'''
+s.clear(s)
+print(s)

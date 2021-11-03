@@ -1,20 +1,25 @@
 # coding: utf-8
 
-d = {"x": 10, "y": 20}
-print(d)
-print(type(d))
+a = {1, 2, 2, 3, 4, 4, 4, 5, 6}
+print(a)
+print(type(a))
 
-print(d.keys()) #key's'
+b = {2, 3, 3, 6, 7}
+print(b)
 
-print(d.values()) #value's'
+print(a - b)
+print(b - a)
+print(a & b)
 
-d2 = {"x": 1000, "j": 500}
-print(d2)
+# print(a + b)はエラー
 
-d.update(d2)
-print(d)
+print(a | b)
+print(a ^ b)
 
-print(d.get("x"))
-print(d.get("z"))
-d.pop("x")
-print(d)
+my_friends = {"A", "C", "D"}
+A_friends = {"B", "D", "E", "F"}
+print(my_friends & A_friends)
+
+f = ["apple", "banana", "apple", "banana"]
+kind = set(f)
+print(kind)
